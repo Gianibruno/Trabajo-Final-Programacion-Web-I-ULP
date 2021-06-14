@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+		<meta name="theme-color" content="#1565C0">
+		<title>Pagina de apreciacion a mis Mains en League of Legends</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+		
+</head>
+<body bgcolor="#fbd6b7">
+<a href="index.html" class="home">|Volver a Inicio|</a>
+<img src="imagenes/Varus.jpg" width="800" height="450" class="imagei">
+<div id="main">
+<h2>Habilidades:</h2>
+	<p>
+	<BR><BR>Pasiva: Al matar o asistir, Varus obtiene velocidad de ataque de forma temporal. Este efecto aumenta si el enemigo es un campeón.
+	<BR><BR>Habilidad Q: Varus prepara y luego lanza un poderoso disparo que obtiene alcance y daño adicionales mientras más tiempo se prepare para disparar.
+	<BR><BR>Habilidad W: Pasiva: los ataques básicos de Varus infligen daño mágico adicional y detonan Infección. Las demás habilidades de Varus detonan Infección e infligen daño mágico según la vida máxima del objetivo. Activa: potencia la siguiente Flecha Penetrante de Varus.
+	<BR><BR>Habilidad E: Varus dispara una tormenta de flechas que inflige daño físico y profana el terreno. El terreno profanado ralentiza la velocidad de movimiento de los enemigos y reduce su curación y regeneración.
+	<BR><BR>Habilidad Definitiva: Varus arroja un tentáculo de corrupción que inmoviliza al primer campeón enemigo alcanzado y luego se expande a los campeones cercanos no infectados para inmovilizarlos al contacto.
+	</p>
+</div>
+<div class="video">
+<h2>Guia en youtube</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/RwipI2VKjNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="mskins">
+<h2>SKINS</h2>
+
+<div id="cvarus">
+<img src="imagenes/varusskins/v1.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v2.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v3.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v4.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v5.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v6.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v7.jpg" width="800" height="450" id="skin">
+<img src="imagenes/varusskins/v8.jpg" width="800" height="450" id="skin">
+</div>
+<BR>
+<button onclick="ant()">Anterior</button>
+<button onclick="sig()">Siguiente</button>
+<script>
+ let c = document.getElementById("cvarus");
+ let imgs = document.querySelectorAll("#cvarus img");
+ let i = 0;
+ c.innerHTML = "";
+ c.appendChild(imgs[0]);
+ function sig(){
+	c.innerHTML = "";
+	i++
+	if(i==8){
+		c.appendChild(imgs[0]);
+		i=0;
+	}else{
+	 c.appendChild(imgs[i]);
+	}
+ }
+ function ant(){
+	c.innerHTML = "";
+	i--
+	if(i==-1){
+		c.appendChild(imgs[7]);
+		i=7;
+	}else{
+	 c.appendChild(imgs[i]);
+	}
+ }
+</script>
+
+</body>
+
+</html>

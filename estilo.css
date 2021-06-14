@@ -1,0 +1,64 @@
+h1{
+  font-size: 60px;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-shadow: 1px 1px 2px white;
+}
+h2{
+	text-align: center;
+	text-shadow: 1px 1px 2px white;
+}
+body{
+	background-image:url(imagenes/bg.png);
+	background-attachment: fixed;
+    background-size:cover;
+	
+}
+p{
+	text-shadow: 1px 1px 2px white;
+}
+#formdiv{
+	text-align: center;
+}
+#main{
+	font-size: 25px;
+  text-align: left-side;
+  color: black;
+  font-weight: bold;
+}
+.imagei,iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+a.home,a.home:visited,a.home:active,a.home:hover{
+	font-size: 35px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom:10px;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	background-color: #c4ffb5;
+	text-decoration: none;
+	
+}
+
+
+#nav{
+	color: #f75959;
+    float: center;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+    font-size: 20px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px 5px;
+
+}
+#mskins{
+	text-align: center;
+}

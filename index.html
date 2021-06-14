@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#1565C0">
+		<title>Pagina de apreciacion a mis Mains en League of Legends</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+		<script language="JavaScript">
+
+    function displayform() {
+	document.getElementById("formdiv").style.display = "block";
+    }
+
+  </script>
+	</head>	
+	<body bgcolor="#fbd6b7">
+	<H1>Mis MAINS en League of Legends</H1>
+	<div id="divnav">
+		<nav id="nav">
+		<h2>Navegador<h2>
+				<a href="Jinx.html">Jinx</a>
+				<a href="Tristana.html">Tristana</a>
+				<a href="Varus.html">Varus</a>
+				<a href="#form" name="formdisplay" onclick="displayform()">Contacto</a>
+		</nav>
+	</div>
+	<section id="formdiv" style="display:none;">
+	<h3>¡Contactá conmigo!</h3>
+	<form name="form" action="" method="get" id="formulario" >
+		<p>
+		Nombre: <input type="text" name="nombre" maxlength="30" required/>
+		</p>
+
+		<p>
+		Email: <input type="email" name="email" maxlength="50" required/>
+		</p>
+		
+		<div>
+		<textarea name="mensaje" form="formulario" maxlength="200" rows="9" cols="50" onfocus="this.value=''" placeholder="Inserta un comentario"></textarea>
+		<div>
+		
+		<p>
+		<input type="submit" value="Enviar" onclick="enviar()"/>
+		</p>
+	</form>
+	</section>
+	<script>
+	function enviar(){
+	if(form.nombre.value!=""||form.email.value!=""){
+	alert("MENSAJE ENVIADO CON EXITO");
+	}else{
+	alert("REVISE LOS CAMPOS INGRESADOS");
+	}
+	}
+	</script>
+	</body>
+</html>
