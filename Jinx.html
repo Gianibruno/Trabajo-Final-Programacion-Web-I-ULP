@@ -57,10 +57,14 @@
 			
 			c.innerHTML = "";
 			c.appendChild(imgs[0]);
+
+
 			function sig() {
 				c.innerHTML = "";
 				i++
-				if (i == img.length() -1) {
+				console.log("Index: ", i)
+				if (i == imgs.length -1) {
+					console.log((i == imgs.length -1))
 					c.appendChild(imgs[0]);
 					i = 0;
 				} else {
@@ -70,9 +74,10 @@
 			function ant() {
 				c.innerHTML = "";
 				i--
+				console.log("Index: ", i)
 				if (i == -1) {
-					c.appendChild(imgs[img.length() - 1]);
-					i = (img.length() - 1);
+					c.appendChild(imgs[imgs.length - 1]);
+					i = (imgs.length - 1);
 				} else {
 					c.appendChild(imgs[i]);
 				}
