@@ -1,67 +1,83 @@
 <html>
-<head>
-<meta charset="utf-8">
-		<meta name="theme-color" content="#1565C0">
-		<title>Pagina de apreciacion a mis Mains en League of Legends</title>
-		<link href="estilo.css" rel="stylesheet" type="text/css">
-</head>
-<body bgcolor="#fbd6b7">
-<a href="index.html" class="home">|Volver a Inicio|</a>
-<div id="main">
-<img src="imagenes/Jinx.jpg" width="800" height="450" class="imagei">
-<h2>Habilidades:</h2>
-	<p><BR>
-	<BR>Pasiva: Jinx recibe un gran aumento de velocidad de movimiento y velocidad de ataque cuando ayuda a matar a un campeón enemigo, a un monstruo épico de la jungla o a destruir una estructura.
-	<BR><BR>Habilidad Q: Jinx modifica sus ataques básicos al cambiar entre Pum-Pum, su ametralladora, y Carapescado, su lanzacohetes. Los ataques con Pum-Pum otorgan velocidad de ataque, mientras que los ataques con Carapescado infligen daño de área y tienen mayor alcance, pero consumen maná y tienen menor velocidad de ataque.
-	<BR><BR>Habilidad W: Jinx usa a Chispita, su pistola de rayos, para disparar un rayo que ralentiza, revela e inflige daño al primer enemigo que golpea.
-	<BR><BR>Habilidad E: Jinx lanza una hilera de granadas paralizantes que explotan tras 5 segundos y envuelven en llamas a los enemigos circundantes. Las Mascafuegos morderán e inmovilizarán a los campeones enemigos que pasen por encima de ellas.
-	<BR><BR>Habilidad Definitiva: Jinx dispara un supercohete por todo el mapa que va aumentando su daño a medida que avanza. El cohete explotará al impactar contra un campeón enemigo y tanto este como los enemigos circundantes recibirán una cantidad de daño proporcional a la Vida que les falte en ese momento.
-	</p>
-</div>
-<div class="video">
-<h2>Guia en youtube</h2>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/odofN3StX9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div id="mskins">
-<h2>SKINS</h2>
 
-<div id="cjinx">
-<img src="imagenes/jinxskins/j1.jpg" width="800" height="450" id="skin">
-<img src="imagenes/jinxskins/j2.jpg" width="800" height="450" id="skin">
-<img src="imagenes/jinxskins/j3.jpg" width="800" height="450" id="skin">
-<img src="imagenes/jinxskins/j4.jpg" width="800" height="450" id="skin">
-<img src="imagenes/jinxskins/j5.jpg" width="800" height="450" id="skin">
-<img src="imagenes/jinxskins/j6.jpg" width="800" height="450" id="skin">
-</div>
-<BR>
-<button onclick="ant()">Anterior</button>
-<button onclick="sig()">Siguiente</button>
-<script>
- let c = document.getElementById("cjinx");
- let imgs = document.querySelectorAll("#cjinx img");
- let i = 0;
- c.innerHTML = "";
- c.appendChild(imgs[0]);
- function sig(){
-	c.innerHTML = "";
-	i++
-	if(i==5){
-		c.appendChild(imgs[0]);
-		i=0;
-	}else{
-	 c.appendChild(imgs[i]);
-	}
- }
- function ant(){
-	c.innerHTML = "";
-	i--
-	if(i==-1){
-		c.appendChild(imgs[5]);
-		i=5;
-	}else{
-	 c.appendChild(imgs[i]);
-	}
- }
-</script>
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#1565C0">
+	<title>Pagina de apreciacion a mis Mains en League of Legends</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#fbd6b7">
+	<a href="index.html" class="home">|Volver a Inicio|</a>
+	<div id="main">
+		<img src="imagenes/Jinx.jpg" width="800" height="450" class="imagei">
+		<h2>Habilidades:</h2>
+		<p><BR>
+			<BR>Pasiva: Jinx recibe un gran aumento de velocidad de movimiento y velocidad de ataque cuando ayuda a
+			matar a un campeón enemigo, a un monstruo épico de la jungla o a destruir una estructura.
+			<BR><BR>Habilidad Q: Jinx modifica sus ataques básicos al cambiar entre Pum-Pum, su ametralladora, y
+			Carapescado, su lanzacohetes. Los ataques con Pum-Pum otorgan velocidad de ataque, mientras que los ataques
+			con Carapescado infligen daño de área y tienen mayor alcance, pero consumen maná y tienen menor velocidad de
+			ataque.
+			<BR><BR>Habilidad W: Jinx usa a Chispita, su pistola de rayos, para disparar un rayo que ralentiza, revela e
+			inflige daño al primer enemigo que golpea.
+			<BR><BR>Habilidad E: Jinx lanza una hilera de granadas paralizantes que explotan tras 5 segundos y envuelven
+			en llamas a los enemigos circundantes. Las Mascafuegos morderán e inmovilizarán a los campeones enemigos que
+			pasen por encima de ellas.
+			<BR><BR>Habilidad Definitiva: Jinx dispara un supercohete por todo el mapa que va aumentando su daño a
+			medida que avanza. El cohete explotará al impactar contra un campeón enemigo y tanto este como los enemigos
+			circundantes recibirán una cantidad de daño proporcional a la Vida que les falte en ese momento.
+		</p>
+	</div>
+	<div class="video">
+		<h2>Guia en youtube</h2>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/odofN3StX9E" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</div>
+	<div id="mskins">
+		<h2>SKINS</h2>
+
+		<div id="carrousel">
+			<img src="imagenes/jinxskins/j1.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/jinxskins/j2.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/jinxskins/j3.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/jinxskins/j4.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/jinxskins/j5.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/jinxskins/j6.jpg" width="800" height="450" id="skin">
+		</div>
+		<BR>
+		<button onclick="ant()">Anterior</button>
+		<button onclick="sig()">Siguiente</button>
+		<script>
+			let c = document.getElementById("carrousel");
+			let imgs = document.querySelectorAll("#carrousel img");
+			let i = 0;
+			
+			c.innerHTML = "";
+			c.appendChild(imgs[0]);
+			function sig() {
+				c.innerHTML = "";
+				i++
+				if (i == img.length() -1) {
+					c.appendChild(imgs[0]);
+					i = 0;
+				} else {
+					c.appendChild(imgs[i]);
+				}
+			}
+			function ant() {
+				c.innerHTML = "";
+				i--
+				if (i == -1) {
+					c.appendChild(imgs[img.length() - 1]);
+					i = (img.length() - 1);
+				} else {
+					c.appendChild(imgs[i]);
+				}
+			}
+		</script>
 </body>
+
 </html>
