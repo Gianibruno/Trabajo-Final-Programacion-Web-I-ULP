@@ -54,17 +54,18 @@
 			let c = document.getElementById("carrousel");
 			let imgs = document.querySelectorAll("#carrousel img");
 			let i = 0;
-			
+			let interval = 1000;
 			c.innerHTML = "";
 			c.appendChild(imgs[0]);
 
+			setInterval(function () {
+				sig();
+			}, 3000);
 
 			function sig() {
 				c.innerHTML = "";
 				i++
-				console.log("Index: ", i)
-				if (i == imgs.length -1) {
-					console.log((i == imgs.length -1))
+				if (i == imgs.length - 1) {
 					c.appendChild(imgs[0]);
 					i = 0;
 				} else {
@@ -74,7 +75,6 @@
 			function ant() {
 				c.innerHTML = "";
 				i--
-				console.log("Index: ", i)
 				if (i == -1) {
 					c.appendChild(imgs[imgs.length - 1]);
 					i = (imgs.length - 1);

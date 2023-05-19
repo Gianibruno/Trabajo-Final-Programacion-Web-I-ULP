@@ -1,67 +1,83 @@
 <html>
-<head>
-<meta charset="utf-8">
-		<meta name="theme-color" content="#1565C0">
-		<title>Pagina de apreciacion a mis Mains en League of Legends</title>
-		<link href="estilo.css" rel="stylesheet" type="text/css">
-</head>
-<body bgcolor="#fbd6b7">
-<a href="index.html" class="home">|Volver a Inicio|</a>
-<div id="main">
-<img src="imagenes/Tristana.jpg" width="800" height="450" class="imagei">
-	<h2>Habilidades:</h2>
-	<p>
-	<BR><BR>Pasiva: Aumenta el alcance de los ataques de Tristana cuando sube de nivel.
-	<BR><BR>Habilidad Q: Tristana incrementa su velocidad de ataque durante un breve tiempo.
-	<BR><BR>Habilidad W: Tristana dispara al suelo para propulsarse hasta un punto lejano. Al aterrizar, dañará y ralentizará durante un breve periodo de tiempo a las unidades circundantes.
-	<BR><BR>Habilidad E: Cuando Tristana mata a una unidad, sus proyectiles estallan como metralla e infligen daño a los enemigos circundantes. Se puede activar para colocarle una bomba a un enemigo, que explotará al cabo de unos segundos y hará daño a todas las unidades circundantes.
-	<BR><BR>Habilidad Definitiva: Tristana carga una gran bola de cañón en su arma y la dispara a la unidad enemiga, que sufre daño mágico y cae hacia atrás.
-	</p>
-</div>
-<div class="video">
-<h2>Guia en youtube</h2>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/PFykgGYovoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div id="mskins">
-<h2>SKINS</h2>
 
-<div id="ctristana">
-<img src="imagenes/tristanaskins/t1.jpg" width="800" height="450" id="skin">
-<img src="imagenes/tristanaskins/t2.jpg" width="800" height="450" id="skin">
-<img src="imagenes/tristanaskins/t3.jpg" width="800" height="450" id="skin">
-<img src="imagenes/tristanaskins/t4.jpg" width="800" height="450" id="skin">
-<img src="imagenes/tristanaskins/t5.jpg" width="800" height="450" id="skin">
-<img src="imagenes/tristanaskins/t6.jpg" width="800" height="450" id="skin">
-</div>
-<BR>
-<button onclick="ant()">Anterior</button>
-<button onclick="sig()">Siguiente</button>
-<script>
- let c = document.getElementById("ctristana");
- let imgs = document.querySelectorAll("#ctristana img");
- let i = 0;
- c.innerHTML = "";
- c.appendChild(imgs[0]);
- function sig(){
-	c.innerHTML = "";
-	i++
-	if(i==5){
-		c.appendChild(imgs[0]);
-		i=0;
-	}else{
-	 c.appendChild(imgs[i]);
-	}
- }
- function ant(){
-	c.innerHTML = "";
-	i--
-	if(i==-1){
-		c.appendChild(imgs[5]);
-		i=5;
-	}else{
-	 c.appendChild(imgs[i]);
-	}
- }
-</script>
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#1565C0">
+	<title>Pagina de apreciacion a mis Mains en League of Legends</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#fbd6b7">
+	<a href="index.html" class="home">|Volver a Inicio|</a>
+	<div id="main">
+		<img src="imagenes/Tristana.jpg" width="800" height="450" class="imagei">
+		<h2>Habilidades:</h2>
+		<p>
+			<BR><BR>Pasiva: Aumenta el alcance de los ataques de Tristana cuando sube de nivel.
+			<BR><BR>Habilidad Q: Tristana incrementa su velocidad de ataque durante un breve tiempo.
+			<BR><BR>Habilidad W: Tristana dispara al suelo para propulsarse hasta un punto lejano. Al aterrizar, dañará
+			y ralentizará durante un breve periodo de tiempo a las unidades circundantes.
+			<BR><BR>Habilidad E: Cuando Tristana mata a una unidad, sus proyectiles estallan como metralla e infligen
+			daño a los enemigos circundantes. Se puede activar para colocarle una bomba a un enemigo, que explotará al
+			cabo de unos segundos y hará daño a todas las unidades circundantes.
+			<BR><BR>Habilidad Definitiva: Tristana carga una gran bola de cañón en su arma y la dispara a la unidad
+			enemiga, que sufre daño mágico y cae hacia atrás.
+		</p>
+	</div>
+	<div class="video">
+		<h2>Guia en youtube</h2>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/PFykgGYovoY" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</div>
+	<div id="mskins">
+		<h2>SKINS</h2>
+
+		<div id="carrousel">
+			<img src="imagenes/tristanaskins/t1.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/tristanaskins/t2.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/tristanaskins/t3.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/tristanaskins/t4.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/tristanaskins/t5.jpg" width="800" height="450" id="skin">
+			<img src="imagenes/tristanaskins/t6.jpg" width="800" height="450" id="skin">
+		</div>
+		<BR>
+		<button onclick="ant()">Anterior</button>
+		<button onclick="sig()">Siguiente</button>
+		<script>
+			let c = document.getElementById("carrousel");
+			let imgs = document.querySelectorAll("#carrousel img");
+			let i = 0;
+			let interval = 1000;
+			c.innerHTML = "";
+			c.appendChild(imgs[0]);
+
+			setInterval(function () {
+				sig();
+			}, 3000);
+
+			function sig() {
+				c.innerHTML = "";
+				i++
+				if (i == imgs.length - 1) {
+					c.appendChild(imgs[0]);
+					i = 0;
+				} else {
+					c.appendChild(imgs[i]);
+				}
+			}
+			function ant() {
+				c.innerHTML = "";
+				i--
+				if (i == -1) {
+					c.appendChild(imgs[imgs.length - 1]);
+					i = (imgs.length - 1);
+				} else {
+					c.appendChild(imgs[i]);
+				}
+			}
+		</script>
 </body>
+
 </html>
